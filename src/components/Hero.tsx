@@ -89,8 +89,8 @@ export const Hero: React.FC<HeroProps> = ({
       {/* 1. Digital Growth Background Video */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <HeroBackgroundVideo
-          webmSrc="/assets/videos/hero-bg.webm"
-          mp4Src="/assets/videos/hero-bg.mp4"
+          webmSrc="/assets/videos/services-hero-bg.webm"
+          mp4Src="/assets/videos/services-hero-bg.mp4"
           className="scale-[1.03]"
           opacity={0.82}
         />
