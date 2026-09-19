@@ -1,0 +1,5 @@
+- [x] Home hero background video को सभी browsers/viewports पर साफ़ दिखाना
+- [x] Home typewriter text और Careers के “Accelerate Your Career.” को golden बनाना
+- [x] Image loading priorities सुधारकर initial page speed तेज़ करना
+- [x] Desktop और mobile preview में सभी fixes verify करना
+- [x] Home hero से background image हटाकर professional agency video लगाना
