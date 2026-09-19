@@ -86,11 +86,11 @@ export const Hero: React.FC<HeroProps> = ({
       className="relative pt-32 pb-20 lg:pt-36 lg:pb-28 overflow-hidden bg-[#FAF9F5] text-[#111111] isolate"
       id="hero-section"
     >
-      {/* 1. Digital Marketing Analytics Background Video */}
+      {/* 1. Digital Growth Background Video */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <HeroBackgroundVideo
-          webmSrc="/assets/videos/home-digital-agency-hero.webm"
-          mp4Src="/assets/videos/home-digital-agency-hero.mp4"
+          webmSrc="/assets/videos/hero-bg.webm"
+          mp4Src="/assets/videos/hero-bg.mp4"
           className="scale-[1.03]"
           opacity={0.82}
         />
