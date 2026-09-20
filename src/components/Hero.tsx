@@ -19,6 +19,9 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 import { HeroBackgroundVideo } from "./HeroBackgroundVideo";
 import { AGENCY_CONFIG } from "../data/agencyData";
 import { getWhatsAppUrl } from "../utils/whatsapp";
+import heroVideoMp4 from "../assets/home-hero-professional.mp4.asset.json";
+import heroVideoWebm from "../assets/home-hero-professional.webm.asset.json";
+import heroVideoPoster from "../assets/home-hero-professional-poster.jpg.asset.json";
 
 // Typewriter Services list (types 1-by-1, pauses, erases, and cycles)
 const TYPEWRITER_SERVICES = [
@@ -89,10 +92,11 @@ export const Hero: React.FC<HeroProps> = ({
       {/* 1. Digital Growth Background Video */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <HeroBackgroundVideo
-          webmSrc="/assets/videos/services-hero-bg.webm"
-          mp4Src="/assets/videos/services-hero-bg.mp4"
+          webmSrc={heroVideoWebm.url}
+          mp4Src={heroVideoMp4.url}
+          poster={heroVideoPoster.url}
           className="scale-[1.03]"
-          opacity={0.82}
+          opacity={0.78}
         />
         {/* Soft white fade preserves pristine typography readability. */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#FAF9F5]/50 via-[#FAF9F5]/30 to-[#FAF9F5]/62" />
