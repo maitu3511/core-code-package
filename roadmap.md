@@ -3,3 +3,5 @@
 - [x] Image loading priorities सुधारकर initial page speed तेज़ करना
 - [x] Desktop और mobile preview में सभी fixes verify करना
 - [x] Home hero से background image हटाकर professional agency video लगाना
+- [x] About page के core team photos में faces का framing ठीक करना
+- [x] Pricing hero background से दोनों diagonal cross lines हटाना
