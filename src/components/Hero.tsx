@@ -98,11 +98,11 @@ export const Hero: React.FC<HeroProps> = ({
           className="scale-[1.03]"
           opacity={1}
         />
-        {/* Soft white fade preserves pristine typography readability. */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FAF9F5]/30 via-[#FAF9F5]/15 to-[#FAF9F5]/40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF9F5]/35 via-[#FAF9F5]/15 to-[#FAF9F5]/25" />
-        {/* Extra spotlight wash directly behind the headline block for guaranteed text clarity */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_58%_at_50%_38%,rgba(250,249,245,0.45)_0%,rgba(250,249,245,0.2)_55%,rgba(250,249,245,0)_82%)]" />
+        {/* Dark scrim tuned to the teal video keeps light typography crisp. */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A1418]/45 via-[#0A1418]/25 to-[#0A1418]/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1418]/50 via-[#0A1418]/25 to-[#0A1418]/35" />
+        {/* Extra dark spotlight wash directly behind the headline block for guaranteed text clarity */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_58%_at_50%_38%,rgba(8,18,22,0.5)_0%,rgba(8,18,22,0.28)_55%,rgba(8,18,22,0)_82%)]" />
       </div>
 
       {/* 2. Warm Gold Ambient Glows & Subtle Radial Accents */}
@@ -152,17 +152,17 @@ export const Hero: React.FC<HeroProps> = ({
           transition={{ duration: 0.6, delay: 0.1 }}
           className="space-y-4 max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#111111] font-heading leading-[1.15] [text-shadow:0_1px_2px_rgba(250,249,245,0.9),0_2px_20px_rgba(250,249,245,0.75)]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#FAF9F5] font-heading leading-[1.15] [text-shadow:0_2px_6px_rgba(6,14,18,0.65),0_4px_24px_rgba(6,14,18,0.5)]">
             Transforming Brands Through High-Converting{" "}
-            <span className="relative inline-flex items-center text-[#B89018] italic font-serif drop-shadow-[0_2px_10px_rgba(250,249,245,0.6)]">
+            <span className="relative inline-flex items-center text-[#EBC96A] italic font-serif drop-shadow-[0_2px_12px_rgba(6,14,18,0.6)]">
               <span>{displayText}</span>
-              <span className="inline-block w-[3px] sm:w-[4px] h-[0.85em] bg-[#D4AF37] ml-1 sm:ml-1.5 animate-pulse rounded-full shadow-[0_0_10px_rgba(212,175,55,0.9)]" />
+              <span className="inline-block w-[3px] sm:w-[4px] h-[0.85em] bg-[#E9C75F] ml-1 sm:ml-1.5 animate-pulse rounded-full shadow-[0_0_12px_rgba(233,199,95,0.9)]" />
             </span>
           </h1>
 
           {/* Dynamic Service Indicator Pill */}
           <div className="flex items-center justify-center gap-2 pt-1">
-            <span className="text-xs uppercase tracking-widest font-semibold text-[#666666]">
+            <span className="text-xs uppercase tracking-widest font-semibold text-[#D8D2C2]">
               Accelerating:
             </span>
             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#111111] text-[#D4AF37] text-xs sm:text-sm font-bold font-mono shadow-md border border-[#D4AF37]/50">
@@ -177,7 +177,7 @@ export const Hero: React.FC<HeroProps> = ({
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-base sm:text-lg text-[#555555] max-w-3xl mx-auto font-normal leading-relaxed [text-shadow:0_1px_14px_rgba(250,249,245,0.85)]"
+          className="text-base sm:text-lg text-[#F2EFE6] max-w-3xl mx-auto font-medium leading-relaxed [text-shadow:0_1px_3px_rgba(6,14,18,0.7),0_2px_16px_rgba(6,14,18,0.55)]"
         >
           Rajkot&apos;s leading digital marketing and web development agency. We engineer custom,
           fast-loading web applications, dominate competitive Google search rankings, and deploy
