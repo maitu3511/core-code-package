@@ -258,11 +258,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenConsulta
                 key={member.id}
                 className="bg-white rounded-xl border border-[#E8E1D0] hover:border-[#D4AF37] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 group"
               >
-                <div className="relative h-60 overflow-hidden bg-[#111111]">
+                <div className="relative h-72 overflow-hidden bg-[#111111]">
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.role}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95"
+                    className="w-full h-full object-cover object-[center_15%] group-hover:scale-[1.02] transition-transform duration-500 filter brightness-95"
                     loading="lazy"
                     decoding="async"
                   />

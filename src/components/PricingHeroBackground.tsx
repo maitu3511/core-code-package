@@ -216,68 +216,7 @@ export const PricingHeroBackground: React.FC = () => {
       {/* Upward Floating Ascending Mesh Canvas */}
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full block opacity-85" />
 
-      {/* SVG Ascending Commercial Growth Trajectory Vectors (Same as Career Animation) */}
-      <svg
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        viewBox="0 0 1000 600"
-        preserveAspectRatio="none"
-      >
-        <defs>
-          <linearGradient id="pricing-path-grad" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.2" />
-            <stop offset="50%" stopColor="#D4AF37" stopOpacity="0.75" />
-            <stop offset="100%" stopColor="#F5D77F" stopOpacity="0.95" />
-          </linearGradient>
-          <filter id="pricing-glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="3" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-
-        {/* 1. Underlying continuous upward growth trajectory curve */}
-        <path
-          d="M 50 560 Q 280 500 420 370 T 820 180 T 960 90"
-          fill="none"
-          stroke="url(#pricing-path-grad)"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeDasharray="4 6"
-          className="opacity-70"
-        />
-
-        {/* 2. Secondary parallel momentum streamline */}
-        <path
-          d="M 120 580 Q 320 520 460 390 T 860 200 T 980 110"
-          fill="none"
-          stroke="#D4AF37"
-          strokeWidth="1.2"
-          strokeLinecap="round"
-          strokeDasharray="2 4"
-          className="opacity-40"
-        />
-
-        {/* 3. Fast animated energy pulses climbing up the trajectory */}
-        <circle r="4.5" fill="#D4AF37" filter="url(#pricing-glow)" className="opacity-95">
-          <animateMotion
-            path="M 50 560 Q 280 500 420 370 T 820 180 T 960 90"
-            dur="4.8s"
-            repeatCount="indefinite"
-          />
-        </circle>
-        <circle r="3.5" fill="#FFF2B2" filter="url(#pricing-glow)" className="opacity-85">
-          <animateMotion
-            path="M 50 560 Q 280 500 420 370 T 820 180 T 960 90"
-            dur="4.8s"
-            begin="2.4s"
-            repeatCount="indefinite"
-          />
-        </circle>
-      </svg>
-
-      {/* Ascending Milestone Waypoints (Aligned with trajectory) */}
+      {/* Ascending Milestone Waypoints */}
       {valueMilestones.map((ms, idx) => (
         <div
           key={`pricing-ms-${idx}`}
