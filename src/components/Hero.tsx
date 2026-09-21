@@ -96,13 +96,13 @@ export const Hero: React.FC<HeroProps> = ({
           mp4Src={heroVideoMp4.url}
           poster={heroVideoPoster.url}
           className="scale-[1.03]"
-          opacity={0.78}
+          opacity={1}
         />
         {/* Soft white fade preserves pristine typography readability. */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FAF9F5]/50 via-[#FAF9F5]/30 to-[#FAF9F5]/62" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF9F5]/58 via-[#FAF9F5]/32 to-[#FAF9F5]/42" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAF9F5]/30 via-[#FAF9F5]/15 to-[#FAF9F5]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF9F5]/35 via-[#FAF9F5]/15 to-[#FAF9F5]/25" />
         {/* Extra spotlight wash directly behind the headline block for guaranteed text clarity */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_58%_at_50%_38%,rgba(250,249,245,0.74)_0%,rgba(250,249,245,0.38)_55%,rgba(250,249,245,0)_82%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_58%_at_50%_38%,rgba(250,249,245,0.45)_0%,rgba(250,249,245,0.2)_55%,rgba(250,249,245,0)_82%)]" />
       </div>
 
       {/* 2. Warm Gold Ambient Glows & Subtle Radial Accents */}
